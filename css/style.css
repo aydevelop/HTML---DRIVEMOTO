@@ -50,6 +50,7 @@ body {
   min-height: 122px;
   font-family: 'SFPro-Bold', sans-serif;
   font-weight: 700;
+  font-size: 20px;
 }
 
 .menu__item {
@@ -58,4 +59,58 @@ body {
 
 .menu__item + .menu__item {
   padding-left: 50px;
+}
+
+.header__box {
+  display: flex;
+}
+
+.header__adress {
+  padding-left: 30px;
+  margin-left: 10px;
+  position: relative;
+  margin-right: 60px;
+}
+
+.header__adress::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/location.svg');
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: -10px;
+}
+
+.user-list {
+  margin-right: 10px;
+}
+
+.user-list {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.use-list__item {
+  padding-right: 15px;
+}
+
+.basket {
+  position: relative;
+}
+
+.basket__num {
+  position: absolute;
+  font-weight: 500;
+  color: white;
+  font-size: 10px;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+  text-align: center;
+  bottom: -15px;
+  right: -15px;
 }
