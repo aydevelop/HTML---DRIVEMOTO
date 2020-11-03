@@ -134,17 +134,22 @@ body {
   padding: 15px 0 14px;
   position: absolute;
   transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
 }
 
 .menu-categories__link:before {
   content: '';
   position: absolute;
   width: 0;
-  left: 0;
   background-color: #1c62cd;
   height: 3px;
-  bottom: 2px;
+  bottom: 10px;
   transition: all 0.5s;
+}
+
+.menu-categories__link:hover {
+  color: #000;
 }
 
 .menu-categories__link:hover::before {
