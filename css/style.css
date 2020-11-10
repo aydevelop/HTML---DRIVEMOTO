@@ -380,3 +380,25 @@ body {
   margin-left: 4px;
   cursor: pointer;
 }
+
+.page-section {
+  margin-bottom: 70px;
+}
+
+.categories__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.categories__item {
+  margin-bottom: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 370px;
+  display: flex;
+}
+
+.categories__item-info {
+  width: 50%;
+}
