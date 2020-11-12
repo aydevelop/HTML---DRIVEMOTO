@@ -20,3 +20,9 @@ $('.search__tabs-item').on('click', function (e) {
   let id = $(this).attr('href')
   $(id).addClass('search__content-item--active')
 })
+
+$('.product-item__favorite').on('click', function (e) {
+  e.preventDefault()
+
+  $('.product-item__favorite').toggleClass('product-item__favorite--active')
+})

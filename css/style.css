@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  margin-bottom: 210px;
 }
 
 *,
@@ -38,6 +39,10 @@ body {
   font-family: 'SFPro-Regular', sans-serif;
   font-size: 24px;
   font-weight: 400;
+}
+
+button:focus {
+  outline: 0;
 }
 
 .container {
@@ -441,9 +446,102 @@ body {
 }
 
 .product-item {
-  border: 5px solid red;
   border-radius: 3px;
+  position: relative;
   margin: 5px;
-  display: flex;
   flex-direction: column;
+  padding: 50px 20px 45px;
+  width: 271px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+.product-item__title {
+  font-weight: normal;
+  padding: 14px 0 25px;
+}
+
+.product-item__favorite {
+  position: absolute;
+  top: 15px;
+  right: 19px;
+  width: 24px;
+  height: 22px;
+  border: none;
+  z-index: 5;
+  background-color: transparent;
+}
+
+.product-item__favorite::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 22px;
+  top: -2px;
+  left: -2px;
+  background-image: url('../images/favorite.svg');
+}
+
+.product-item__favorite--active::before {
+  background-image: url('../images/favorite2.svg');
+}
+
+.product-item__basket {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 60px;
+  height: 40px;
+  background-color: #fff;
+  background: #1c62cd;
+  border-radius: 10px 0px 0px 0px;
+  border: none;
+  padding-top: 5px;
+}
+
+.product-item__hover_text {
+  padding: 18px 21px;
+  background-color: lightgray;
+  opacity: 0.8;
+  border-radius: 5px;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  top: 30%;
+  position: absolute;
+  margin: 10px;
+  transition: all 0.3s;
+}
+
+.product-item:hover .product-item__hover_text {
+  opacity: 1;
+}
+
+.product-item--sale::before {
+  content: 'SALE';
+  padding: 15px;
+  background-color: #1c62cd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-style: 12px;
+  line-height: 14px;
+  letter-spacing: 0.07em;
+}
+
+.product-item__notify-text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.product-item .product-item__notify-text {
+  display: none;
+}
+
+.product-item--not-available .product-item__notify-text {
+  display: block;
 }
