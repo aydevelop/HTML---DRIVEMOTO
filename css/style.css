@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  margin-bottom: 210px;
 }
 
 *,
@@ -581,4 +580,21 @@ button:focus {
 .products__title {
   font-size: 23px;
   margin-bottom: 15px;
+}
+
+.footer {
+  background: #f0f0f4;
+}
+
+.footer__bottom {
+  padding: 46px 0 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__bottom-link {
+  line-height: 12px;
+  color: #48494d;
+  font-size: 20px;
+  margin: 0 40px;
 }
