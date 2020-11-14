@@ -40,7 +40,8 @@ body {
   font-weight: 400;
 }
 
-button:focus {
+button:focus,
+input:focus {
   outline: 0;
 }
 
@@ -595,6 +596,64 @@ button:focus {
 .footer__bottom-link {
   line-height: 12px;
   color: #48494d;
-  font-size: 20px;
+  font-size: 15px;
   margin: 0 40px;
+}
+
+.footer__top {
+  padding-top: 43px;
+}
+
+.footer__top-inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__top-newslatter {
+  width: 295px;
+}
+
+.footer__top-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer-form {
+  margin-top: 34px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-form__input {
+  width: 200px;
+}
+
+.footer-form__btn {
+  text-transform: uppercase;
+  padding: 10px 17px;
+  border: none;
+  background-color: #1c62cd;
+  color: #fff;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.12em;
+}
+
+.footer-form__input {
+  background-color: #fff;
+  border: none;
+  line-height: 17px;
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.footer-form__input::placeholder {
+  color: #c4c4c4;
+}
+
+.footer-list {
+  font-size: 14px;
+  line-height: 17px;
 }
