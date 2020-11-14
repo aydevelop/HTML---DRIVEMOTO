@@ -588,7 +588,7 @@ input:focus {
 }
 
 .footer__bottom {
-  padding: 46px 0 22px;
+  padding: 46px 0 28px;
   display: flex;
   justify-content: center;
 }
@@ -656,4 +656,17 @@ input:focus {
 .footer-list {
   font-size: 14px;
   line-height: 17px;
+}
+
+.footer-list__item {
+  line-height: 24px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-list__item + .social-list__item {
+  margin-left: 25px;
 }
