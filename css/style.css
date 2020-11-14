@@ -670,3 +670,17 @@ input:focus {
 .social-list__item + .social-list__item {
   margin-left: 25px;
 }
+
+.breadcrumbs__list-item {
+  display: inline-block;
+  padding-right: 26px;
+  margin-right: 10px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.breadcrumbs__list-item::after {
+  content: '###';
+  position: absolute;
+  right: 0;
+}
