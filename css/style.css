@@ -766,5 +766,36 @@ button {
   padding-top: 10px !important;
 }
 
-.catalog__filter-btngline {
+.catalog__inner {
+  display: flex;
+}
+
+.catalog__inner-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog__inner-list:after {
+  content: '';
+  width: 271px;
+}
+
+.catalog__inner-aside {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.catalog__inner-list .product-item__wrapper {
+  margin-bottom: 40px;
+}
+
+.pagination {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
 }
