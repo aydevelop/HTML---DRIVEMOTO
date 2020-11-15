@@ -517,7 +517,7 @@ button {
 .product-item__hover_text {
   padding: 18px 21px;
   background-color: lightgray;
-  opacity: 0.8;
+  opacity: 0.6;
   border-radius: 5px;
   left: 0;
   right: 0;
@@ -707,4 +707,64 @@ button {
 
 .catalog__inner .product-item__basket {
   padding-right: 20px;
+}
+
+.catalog__inner .product-item__title {
+  font-size: 18px;
+  line-height: 31px;
+}
+
+.catalog__inner img {
+  max-width: 100%;
+}
+
+.cataglog__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.catalog__filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.catalog__filter-items button {
+  font-size: 16px;
+  line-height: 17px;
+  opacity: 0.7;
+  background: #f0f0f4;
+  border-radius: 3px;
+  padding: 5px 42px;
+  cursor: pointer;
+}
+
+.catalog__filter button + button {
+  margin-left: 10px;
+}
+
+.catalog__filter-btn button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 20px !important;
+}
+
+.catalog__filter-btn select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.catalog__filter-btn select:focus {
+  outline: none;
+}
+
+.catalog__filter-btngrid {
+  padding-top: 10px !important;
+}
+
+.catalog__filter-btngline {
 }
