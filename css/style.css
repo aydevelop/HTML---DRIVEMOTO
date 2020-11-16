@@ -727,6 +727,7 @@ button {
 .catalog__filter {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 30px;
   margin-top: 20px;
   position: relative;
@@ -746,6 +747,10 @@ button {
   margin-left: 10px;
 }
 
+.catalog__filter-btn {
+  display: flex;
+}
+
 .catalog__filter-btn button {
   background-color: transparent;
   cursor: pointer;
@@ -756,14 +761,17 @@ button {
 .catalog__filter-btn select {
   padding: 5px;
   font-size: 16px;
+  position: static;
+  bottom: 20px;
 }
 
 .catalog__filter-btn select:focus {
   outline: none;
 }
 
-.catalog__filter-btngrid {
-  padding-top: 10px !important;
+.catalog__filter-btngrid,
+.catalog__filter-btngline {
+  padding-top: 5px !important;
 }
 
 .catalog__inner {
@@ -798,4 +806,21 @@ button {
 .pagination-list {
   display: flex;
   justify-content: center;
+}
+
+.pagination-list__item {
+  padding: 9px 15px;
+  border: 2px solid transparent;
+  margin: 0 11px;
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.pagination-list__item.active {
+  border: 2px solid #1c62cd;
+  color: #1c62cd;
+}
+
+.pagination-list__item a {
+  display: block;
 }
