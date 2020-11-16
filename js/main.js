@@ -40,3 +40,19 @@ $('.product-slider').slick({
    <img src="images/arrow3.svg" >  
   </bottom>`,
 })
+
+$('.tabs .tab').on('click', function (e) {
+  let _this = $(this)
+  $(_this).addClass('tab--active').siblings().removeClass('tab--active')
+
+  $(_this)
+    .parent()
+    .parent()
+    .find('.tabs-container .tabs-content')
+    .css('display', 'none')
+
+  let id = $(this).attr('href')
+  $(_this).parent().parent().find(id).css('display', 'block')
+
+  return false
+})

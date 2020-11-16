@@ -824,3 +824,39 @@ button {
 .pagination-list__item a {
   display: block;
 }
+
+.tabs-wrapper {
+  width: 300px;
+  word-wrap: break-word;
+}
+
+.aside-filter__tab {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: gray;
+  padding-bottom: 5px;
+}
+
+.aside-filter__tabs {
+  margin-bottom: 50px;
+}
+
+.aside-filter__tab + .aside-filter__tab {
+  margin-left: 20px;
+}
+
+.aside-filter__tab.tab--active {
+  border-bottom: 3px solid #1c62cd;
+  color: #2f3035;
+}
+
+.aside-filter__tabs-content {
+  display: none;
+}
+
+.aside-filter__tabs-content--active {
+  display: block;
+}
