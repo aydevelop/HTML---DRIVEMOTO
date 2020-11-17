@@ -56,3 +56,5 @@ $('.tabs .tab').on('click', function (e) {
 
   return false
 })
+
+$('.filter-style').styler()

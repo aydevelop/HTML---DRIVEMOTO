@@ -860,3 +860,22 @@ button {
 .aside-filter__tabs-content--active {
   display: block;
 }
+
+.aside-filter__item-drop {
+  margin: 40px 0;
+}
+
+.aside-filter__item-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 26px;
+}
+
+.filter__item-drop {
+  margin-bottom: 20px;
+}
+
+.filter__item-drop::before {
+  content: '';
+}

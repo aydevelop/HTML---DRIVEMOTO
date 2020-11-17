@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document#</title>
-    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="css/jquery.formstyler.css" />
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css" />
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -141,7 +145,34 @@
                   id="tab-1"
                   class="tabs-content aside-filter__tabs-content aside-filter__tabs-content--active"
                 >
-                  content 1
+                  <form class="aside-filter__form">
+                    <ul class="aside-filter__list">
+                      <!-- -------------------------------------------------- -->
+                      <li class="aside-filter__item-drop">
+                        <p class="aside-filter__item-title filter__item-drop">
+                          Наличие
+                        </p>
+                        <div class="aside-filter__item-content">
+                          <div class="aside-filter__item-content-box">
+                            <label>
+                              <input class="filter-style" type="checkbox" />
+                              В наличие
+                            </label>
+                          </div>
+                          <div class="aside-filter__item-content-box">
+                            <label>
+                              <input class="filter-style" type="checkbox" />
+                              Под заказ
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- -------------------------------------------------- -->
+                      <li class="aside-filter__item-drop"></li>
+                      <!-- -------------------------------------------------- -->
+                      <li class="aside-filter__item-drop"></li>
+                    </ul>
+                  </form>
                 </div>
                 <div id="tab-2" class="tabs-content aside-filter__tabs-content">
                   content 2
@@ -405,8 +436,11 @@
       </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
