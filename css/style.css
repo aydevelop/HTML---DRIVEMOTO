@@ -874,8 +874,65 @@ button {
 
 .filter__item-drop {
   margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
 .filter__item-drop::before {
   content: '';
+  background-image: url('../images/drop-down.svg');
+  position: absolute;
+  width: 13px;
+  height: 9px;
+  left: 0;
+  top: 5px;
+  transition: rotate(0deg);
+}
+
+.filter__item-drop--active::before {
+  transform: rotate(180deg);
+}
+
+.aside-filter__content {
+  display: flex;
+}
+
+.aside-filter__content-box {
+  width: 50%;
+}
+
+.aside-filter__content-label {
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.jq-checkbox,
+.jq-radio {
+  background-color: gray;
+  width: 14px;
+  height: 14px;
+  border-radius: 1px;
+  box-shadow: none;
+}
+
+.jq-checkbox.checked,
+.jq-radion.checked {
+  background: #1c62cd;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+  position: relative;
+  top: -1px;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  padding: none;
+  border: none;
+  transform: rotate(0);
+  background-image: url('../images/checked.svg');
 }
