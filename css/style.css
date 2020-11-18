@@ -896,6 +896,8 @@ button {
 
 .aside-filter__content {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .aside-filter__content-box {
@@ -921,7 +923,7 @@ button {
 }
 
 .jq-checkbox.checked,
-.jq-radion.checked {
+.jq-radio.checked {
   background: #1c62cd;
 }
 
@@ -935,4 +937,68 @@ button {
   border: none;
   transform: rotate(0);
   background-image: url('../images/checked.svg');
+}
+
+.jq-radio.checked .jq-radio__div {
+  width: 0;
+  height: 0;
+  margin: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.aside-filter__content.aside-filter__content-radio {
+  flex-wrap: nowrap;
+}
+
+.irs--flat {
+  width: 100%;
+  margin-top: -5px;
+}
+
+/* .irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+  display: none;
+} */
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  top: 60px;
+  padding: 0;
+  line-height: 17px;
+  text-decoration: underline;
+  font-size: 14px;
+  color: #2f3035;
+  text-shadow: none;
+  background-color: transparent;
+  border-radius: 0;
+  visibility: visible !important;
+  padding-left: 27px;
+}
+
+.irs-min::before,
+.irs-max::before {
+  position: absolute;
+  padding-right: 5px;
+  line-height: 17px;
+  font-size: 14px;
+  color: gray;
+  left: 0;
+}
+
+.irs-min::before {
+  content: 'от';
+}
+
+.irs-max::before {
+  content: 'до';
+}
+
+.irs--flat .irs-line {
+  top: 25px;
+  height: 12px;
+  background-color: #e1e4e9;
+  border-radius: 4px;
 }
