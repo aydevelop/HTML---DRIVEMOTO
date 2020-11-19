@@ -1086,3 +1086,18 @@ button {
   font-size: 16px;
   color: gray;
 }
+
+.product-card__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card__img-box {
+  width: 500px;
+  padding-top: 64px;
+  text-align: center;
+}
+
+.product-card__content {
+  width: 570px;
+}
