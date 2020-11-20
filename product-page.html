@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document#</title>
-    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="css/jquery.formstyler.css" />
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css" />
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -128,17 +132,20 @@
               <button class="product-card__icon">
                 <img src="images/compare.svg" alt="" />
               </button>
-              <div class="rate"></div>
+              <div data-rateyo-rating="4.5" id="rateYo"></div>
             </div>
             <div class="tabs-wrapper product-card__tabs">
               <div class="tabs">
-                <a href="#" class="tab tab--active product-card__tab"
+                <a href="#tab-1" class="tab tab--active product-card__tab"
                   >Характеристики</a
                 >
-                <a href="#" class="tab product-card__tab">Наличие в магазине</a>
+                <a href="#tab-2" class="tab product-card__tab"
+                  >Наличие в магазине</a
+                >
               </div>
               <div class="tabs-container">
                 <div
+                  id="tab-1"
                   class="tabs-content product-card__tab-content product-card__tab-content--active"
                 >
                   <ul class="product-card__list">
@@ -165,10 +172,12 @@
                       <div class="product-card__item-right">2018</div>
                     </li>
                   </ul>
-                  <a class="product-card__more" href="#">Показать еще</a>
+                  <div>
+                    <a class="product-card__more" href="#">Показать еще</a>
+                  </div>
                   <button class="product-card__btn">купить</button>
                 </div>
-                <div class="tabs-content product-card__tab-content">
+                <div id="tab-2" class="tabs-content product-card__tab-content">
                   <small>Наличие в магазине</small>
                 </div>
               </div>
@@ -247,8 +256,11 @@
       </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

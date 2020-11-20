@@ -8,6 +8,18 @@ $(function () {
      <img src="images/arrow-right.svg" >  
     </bottom>`,
   })
+
+  $('.filter-style').styler()
+
+  $('.js-range-slider').ionRangeSlider({
+    grid: false,
+  })
+
+  $('#rateYo').rateYo({
+    spacing: '7px',
+    ratedFill: '#1C62CD',
+    normalFill: '#C4C4C4',
+  })
 })
 
 $('.search__tabs-item').on('click', function (e) {
@@ -57,13 +69,7 @@ $('.tabs .tab').on('click', function (e) {
   return false
 })
 
-$('.filter-style').styler()
-
 $('.filter__item-drop').on('click', function () {
   $(this).toggleClass('filter__item-drop--active')
   $(this).next().slideToggle('200')
-})
-
-$('.js-range-slider').ionRangeSlider({
-  grid: false,
 })
