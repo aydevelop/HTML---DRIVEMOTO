@@ -20,6 +20,19 @@ $(function () {
     ratedFill: '#1C62CD',
     normalFill: '#C4C4C4',
   })
+
+  $('.product-slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    dots: false,
+    prevArrow: `<bottom class="banner-section__slider-btn banner-section__slider-btnprev banner-section__slider-btnprev--product">
+     <img src="images/arrow4.svg" >
+    </bottom>`,
+    nextArrow: `<bottom class="banner-section__slider-btn banner-section__slider-btnnext banner-section__slider-btnnext--product">
+     <img src="images/arrow3.svg" >
+    </bottom>`,
+  })
 })
 
 $('.search__tabs-item').on('click', function (e) {
@@ -38,19 +51,6 @@ $('.product-item__favorite').on('click', function (e) {
 
   $('.product-item__favorite').removeClass('product-item__favorite--active')
   $(this).addClass('product-item__favorite--active')
-})
-
-$('.product-slider').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 4,
-  dots: true,
-  prevArrow: `<bottom class="banner-section__slider-btn banner-section__slider-btnprev banner-section__slider-btnprev--product">
-   <img src="images/arrow4.svg" >  
-  </bottom>`,
-  nextArrow: `<bottom class="banner-section__slider-btn banner-section__slider-btnnext banner-section__slider-btnnext--product">
-   <img src="images/arrow3.svg" >  
-  </bottom>`,
 })
 
 $('.tabs .tab').on('click', function (e) {
