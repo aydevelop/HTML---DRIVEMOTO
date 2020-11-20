@@ -1246,3 +1246,64 @@ button {
 .product-card__buttons button + * {
   margin-left: 20px;
 }
+
+.card__tabs {
+  margin-bottom: 80px;
+}
+
+.card__tabs .tabs-content {
+  display: none;
+}
+
+.card__tabs .tabs-content--active {
+  display: block;
+}
+
+.card__tabs .tabs-wrapper {
+  width: 100%;
+}
+
+.card__tab-box {
+  background: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 22px 0;
+  margin-bottom: 40px;
+}
+
+.card__tabs .card__tab {
+  line-height: 24px;
+  color: #2f3035;
+  opacity: 0.8;
+  font-size: 20px;
+}
+
+.card__tabs .tab--active {
+  border-bottom: 1px solid #1c62cd;
+  opacity: 1;
+}
+
+/* .card__label-search {
+  line-height: 20px;
+  color: #2f3035;
+  opacity: 0.8;
+  font-size: 17px;
+}
+
+.card__input-search {
+  background: white;
+  border-radius: 3px;
+  margin-left: 17px;
+  padding: 0 37px 0 17px;
+  border: none;
+} */
+
+.card__list-item {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+  display: flex;
+  font-size: 17px;
+  line-height: 150%;
+  color: #2f3035;
+}
