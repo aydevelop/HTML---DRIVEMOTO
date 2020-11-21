@@ -73,3 +73,7 @@ $('.filter__item-drop').on('click', function () {
   $(this).toggleClass('filter__item-drop--active')
   $(this).next().slideToggle('200')
 })
+
+$('.menu__btn').on('click', function () {
+  $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
+})

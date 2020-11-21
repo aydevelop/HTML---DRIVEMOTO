@@ -5,23 +5,32 @@
 .menu-mobile__list {
   width: 243px;
   box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.15);
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  padding-bottom: 20px;
+}
+
+.menu-mobile__list--active {
+  transform: translateX(0%);
 }
 
 .menu-mobile__item {
   position: relative;
   border-bottom: 1px solid lightgray;
+  padding-bottom: 8px;
 }
 
 .menu-mobile__link {
   display: block;
   padding-left: 53px;
-  padding-top: 36px;
+  padding-top: 22px;
 }
 
 .menu-mobile__img {
   position: absolute;
   left: 11px;
-  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (max-width: 1100px) {
@@ -35,6 +44,20 @@
 
   .menu-categories {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 968px) {
+  .header__bottom {
+    display: block;
+  }
+
+  .menu__list {
+    display: block;
+  }
+
+  .menu-mobile__list {
+    display: none;
   }
 }
 
