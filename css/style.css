@@ -38,6 +38,8 @@ body {
   font-family: 'SFPro-Regular', sans-serif;
   font-size: 24px;
   font-weight: 400;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 button:focus,
@@ -123,7 +125,7 @@ button {
   background-color: blue;
   border-radius: 50%;
   text-align: center;
-  bottom: -15px;
+  bottom: -5px;
   right: -15px;
 }
 
