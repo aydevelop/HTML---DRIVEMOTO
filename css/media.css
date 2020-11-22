@@ -2,12 +2,19 @@
   display: none;
 }
 
+.header {
+  position: relative;
+}
+
 .menu-mobile__list {
+  position: absolute;
   width: 243px;
   box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.15);
   transform: translateX(-100%);
   transition: all 0.3s;
   padding-bottom: 20px;
+  z-index: 5;
+  background-color: white;
 }
 
 .menu-mobile__list--active {
@@ -31,6 +38,18 @@
   left: 11px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media (max-width: 1200px) {
+  .banner-section__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-section__slider {
+    max-width: 770px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -82,6 +101,10 @@
     height: 3px;
     width: 34px;
     margin: 8px 0;
+  }
+
+  .banner-section__slider {
+    display: none;
   }
 }
 
