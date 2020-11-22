@@ -39,7 +39,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
+/* 
 @media (max-width: 1200px) {
   .banner-section__inner {
     flex-direction: column;
@@ -112,4 +112,4 @@
   .header__box {
     display: none;
   }
-}
+} */
